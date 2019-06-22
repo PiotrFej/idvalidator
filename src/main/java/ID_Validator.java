@@ -45,7 +45,7 @@ public class ID_Validator implements I_Validator {
         //Values_Of_Numbers values = new Values_Of_Numbers();
 
         String id_without_spaces = id_number.trim().replaceAll(" ", "");
-        System.out.println(id_without_spaces);
+        //System.out.println(id_without_spaces);
         int first_value = 0;
         int second_value = 0;
 

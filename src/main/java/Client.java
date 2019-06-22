@@ -10,6 +10,18 @@ public class Client {
         scanner.close();
 
         ID_Validator id_validator = new ID_Validator();
-        id_validator.validate(id_number);
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        stringBuilder.append("Your ID Number is ");
+
+        if (id_validator.validate(id_number)) {
+            stringBuilder.append("correct");
+        } else {
+            stringBuilder.append("incorrect");
+        }
+        System.out.println(stringBuilder.toString());
+
+
     }
 }

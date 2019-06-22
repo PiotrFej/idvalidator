@@ -45,7 +45,7 @@ public class ValidatorTest {
 
     @Test
     public void test_incorrect_ID() {
-        String ID = "OLH281659";
+        String ID = "AAA100000";
         assertFalse(validator.validate(ID));
     }
 }

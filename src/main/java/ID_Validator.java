@@ -8,7 +8,7 @@ public class ID_Validator implements I_Validator {
         System.out.println(id_without_spaces);
 
         if (id_without_spaces.length() != 9) {
-            System.out.println("This is not correct ID format.");
+            System.out.println("Inorrect ID - length incorrect");
             return false;
         }
 
@@ -17,12 +17,14 @@ public class ID_Validator implements I_Validator {
         for (int i = 0; i < 2; i++) {
             if (!Character.isLetter(chars[i])) ;
             {
+                System.out.println("Incorrect ID - number of characters incorrect");
                 return false;
             }
         }
 
         for (int i = 3; i < 8; i++) {
             if (!Character.isDigit(chars[i])) {
+                System.out.println("Incorrect ID - number of digits incorrect");
                 return false;
             }
         }
